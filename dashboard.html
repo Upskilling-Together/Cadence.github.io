@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dana's Dashboard · ABC Tutoring</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Karla:ital,wght@0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-role="dashboard">
+
+<div class="proto-banner"><strong>Prototype preview</strong> — bookings are saved to this browser only (no shared backend yet). Give this page its own login before it goes live.</div>
+
+<header class="site">
+  <div class="site-inner wrap" style="padding-left:0;padding-right:0;">
+    <div class="brand">
+      <span class="mark">AT</span>
+      <span class="name"><b>ABC</b> Tutoring</span>
+    </div>
+    <div class="view-toggle">
+      <a href="index.html">Home</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="dashboard.html" class="active">Dana's dashboard</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="dash-head" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;">
+      <div>
+        <h1>Good to see you, Dana.</h1>
+        <p>Requests come in here first — check availability, then confirm. Nothing reaches a family until you approve it.</p>
+      </div>
+      <div id="alert-status"></div>
+    </div>
+    <div class="stat-tiles" id="stat-tiles"></div>
+
+    <div class="section-head" style="margin-top:0;"><h2>Pending requests</h2></div>
+    <div id="pending-list"></div>
+
+    <div class="section-head"><h2>Upcoming sessions, by tutor</h2></div>
+    <div id="tutor-schedules"></div>
+  </section>
+</main>
+
+<footer class="site-foot">ABC Tutoring · prototype built to review layout, booking flow, and telemetry</footer>
+
+<script src="js/telemetry.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

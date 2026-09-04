@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ABC Tutoring</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body data-role="home">
+
+<div class="proto-banner"><strong>Prototype preview</strong> — this is a working demo to review, not the final site.</div>
+
+<header class="site">
+  <div class="site-inner wrap" style="padding-left:0;padding-right:0;">
+    <div class="brand">
+      <span class="mark">AT</span>
+      <span class="name"><b>ABC</b> Tutoring</span>
+    </div>
+    <div class="view-toggle">
+      <a href="index.html" class="active">Home</a>
+      <a href="tutors.html">Tutors</a>
+      <a href="dashboard.html">Dana's dashboard</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="wrap">
+    <div class="hero">
+      <div>
+        <span class="eyebrow">K–12 tutoring · in Dana's neighborhood</span>
+        <h1 style="margin-top:10px;">Tutoring built around <em>your kid</em>, not a schedule grid.</h1>
+        <p>ABC Tutoring pairs K–12 students with a tutor in math, science, or elementary reading — with a soft spot for middle schoolers who just need things to click. Tell us the subject and grade, and we'll match you with the right tutor. Every request is reviewed personally before anything's confirmed, so you're never caught by a mix-up in availability.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="openBooking()">Request a session</button>
+          <a class="btn btn-ghost" href="tutors.html" style="text-decoration:none;">Meet our tutors</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <span class="eyebrow">What we teach</span>
+        <div class="subject-pills">
+          <span class="pill math"><span class="dot"></span>Math</span>
+          <span class="pill science"><span class="dot"></span>Science</span>
+          <span class="pill reading"><span class="dot"></span>Elementary reading</span>
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b>6</b><span>tutors on staff</span></div>
+          <div class="stat"><b>K–12</b><span>grades served</span></div>
+          <div class="stat"><b>1–2 days</b><span>to confirm a request</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top:56px;">
+      <h2>How it works</h2>
+    </div>
+    <div class="tutor-grid">
+      <div class="tutor-card">
+        <div class="tutor-name">1. Tell us what you need</div>
+        <div class="tutor-bio">Browse our tutors or just tell us the subject and grade — we'll suggest a good match.</div>
+      </div>
+      <div class="tutor-card">
+        <div class="tutor-name">2. Dana checks availability</div>
+        <div class="tutor-bio">Every request is reviewed personally against the tutor's real schedule before anything is confirmed.</div>
+      </div>
+      <div class="tutor-card">
+        <div class="tutor-name">3. You're set</div>
+        <div class="tutor-bio">Once approved, you'll hear back with the confirmed tutor and time — no surprises.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">ABC Tutoring · prototype built to review layout, booking flow, and telemetry</footer>
+
+<div class="overlay" id="overlay" hidden><div class="modal" id="modal-content"></div></div>
+
+<script src="js/telemetry.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
